@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #1a2034;
+	font-family: sans-serif;
+}
+
+.menu {
+	background-image: url("../media/anhmenu.jpg");
+	background-size: cover;
+	width: 200px;
+	height: 100%;
+	position: fixed;
+}
+.menu div {
+	background-color: rgba(36,41,59,0.9);
+	padding: 10px;
+	width: inherit;
+	height: 100%;
+
+}
+.menu h4 {
+	color: #ec5b37;
+	text-align: center;
+	font-weight: normal;
+	border-bottom: 1px solid #5b5b5b;
+	padding: 20px 0px;
+}
+.menu ul {
+	list-style-type: none;
+	padding-top: 10px;
+}
+.menu a {
+	display: block;
+	color: #c0c0c0;
+	text-decoration: none;
+	padding: 8px 16px;
+}
+.menu a:hover {
+	background-color: #853c96;
+	border-radius: 3px;
+}
+
+.content {
+	padding-left: 200px;
+}
+.content a {
+	color: #c0c0c0;
+	position: fixed;
+	right: 5px;
+	top: 5px;
+	text-decoration: none;
+}
+.content a:hover {
+	color: #853c96;
+}
+.content img {
+	height: 250px;
+	width: 100%;
+}
+.content p {
+	background-color: #853c96;
+	width: 500px;
+	padding: 8px;
+	color: #c0c0c0;
+	border-radius: 3px;
+	margin: 10px;
+}
+.user {
+	background-color: #20293f;
+	width: 520px;
+	padding: 30px 10px;
+	position: relative;
+	margin-top: -30px;
+	z-index: -1;
+	border-radius: 3px;
+}
+.content table {
+	width: 100%;
+	color: #818181;
+	border-collapse: collapse;
+}
+.content th {
+	text-align: left;
+	padding: 5px 8px
+}
+.content td {
+	padding: 5px 8px;
+	border-top: 1px solid #5b5b5b;
+}
+
+[class*="col-"] {
+	float: left;
+}
+.row::after {
+	content: "";
+	clear: both;
+	display: table; 
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
